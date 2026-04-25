@@ -1,0 +1,14 @@
+html {
+background-color: rgb(255, 0, 0);
+}
+
+header {
+text-align: center;
+background-color: rgb(59, 59, 59);
+color : white;
+}
+footer {
+text-align: center;
+background-color: rgb(59, 59, 59);
+color : white;
+}
