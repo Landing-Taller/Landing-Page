@@ -1,38 +1,97 @@
 @font-face {
-    font-family: Impact;
-    src: url();
+    font-family: "fuente1";
+    src: url(./Fuentes/fuente1.ttf);
 }
+
+@font-face {
+    font-family: "fuente2";
+    src: url(./Fuentes/fuentes2.ttf);
+}
+
 html {
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
-background-image: url(./Imagenes/Imagen1.jpg);
-background-size: cover;
-background-position: center;
+    background-image: url(./Imagenes/Imagen1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 header {
-background-image : url(./Imagenes/Imagen2.png);
-text-align: center;
-background-size: cover;
-padding: 150px;
-height: 30%;
-width: 80%;
-color : white;
+    background-image: url(./Imagenes/Imagen2.png);
+    text-align: center;
+    background-size: cover;
+    padding: 160px;
+    height: 30%;
+    width: 80%;
+    color: white;
 }
 
 
 
 footer {
-text-align: center;
-background-color: rgb(59, 59, 59);
+    text-align: center;
+    background-color: rgb(59, 59, 59);
 
-color : white;
+    color: white;
 }
 
-class .tarjeta {
-background-image : url(./Imagenes/Imagen2.png);
-text-align: center;
-color : white;
+.subtitulo {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
 
-} 
+.tarjeta {
+    background-color: rgb(164, 151, 222);
+    box-shadow: 1px 0 5px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 450px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+
+.contenedor {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tarjeta-cronograma {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto-cronograma {}
+
+h1,
+h2,
+h3 {
+    font-family: "fuente1";
+}
+
+h1 {
+    text-align: center;
+}
+
+p,
+span {
+    font-family: "fuente2";
+}
+
+.invitados {
+    background-color: rgb(255, 228, 117);
+}
+
+
+.formulario {
+    background-color: rgb(164, 151, 222);
+    box-shadow: 1px 0 5px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+}
