@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Impact;
+    src: url();
+}
+html {
+font-family: Arial, Helvetica, sans-serif;
+}
 body {
 background-image: url(./Imagenes/Imagen1.jpg);
 background-size: cover;
@@ -5,9 +12,8 @@ background-position: center;
 }
 
 header {
-    margin-block: 20px;
+background-image : url(./Imagenes/Imagen2.png);
 text-align: center;
-background-color: rgb(59, 59, 59);
 color : white;
 }
 
@@ -18,3 +24,10 @@ text-align: center;
 background-color: rgb(59, 59, 59);
 color : white;
 }
+
+class .tarjeta {
+background-image : url(./Imagenes/Imagen2.png);
+text-align: center;
+color : white;
+
+} 
