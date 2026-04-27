@@ -14,6 +14,10 @@ background-position: center;
 header {
 background-image : url(./Imagenes/Imagen2.png);
 text-align: center;
+background-size: cover;
+padding: 150px;
+height: 30%;
+width: 80%;
 color : white;
 }
 
@@ -22,6 +26,7 @@ color : white;
 footer {
 text-align: center;
 background-color: rgb(59, 59, 59);
+
 color : white;
 }
 
