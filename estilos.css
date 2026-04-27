@@ -1,8 +1,11 @@
-html {
-background-color: rgb(255, 0, 0);
+body {
+background-image: url(./Imagenes/Imagen1.jpg);
+background-size: cover;
+background-position: center;
 }
 
 header {
+    margin-block: 20px;
 text-align: center;
 background-color: rgb(59, 59, 59);
 color : white;
