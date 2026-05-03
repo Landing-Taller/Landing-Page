@@ -8,24 +8,27 @@
     src: url(./Fuentes/fuentes2.ttf);
 }
 
-html {
+html, body {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
     background-image: url(./Imagenes/Imagen1.jpg);
     background-size: cover;
     background-position: center;
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box; esto hace que el fondo como qu ese quede quito mientras hace scoll nomas */
+    background-attachment: fixed;
 }
 
 header {
+
+    background-color: rgb(59, 59, 59);
+    color: white;
     background-image: url(./Imagenes/Imagen2.png);
     text-align: center;
     background-size: cover;
-    padding: 160px;
-    height: 30%;
-    width: 80%;
+    padding: 10% 30%;
     color: white;
+
 }
 
 
@@ -41,32 +44,28 @@ footer {
     text-align: center;
     color: rgb(0, 0, 0);
 }
-
-.tarjeta {
-    background-color: rgb(164, 151, 222);
-    box-shadow: 1px 0 5px 5px rgba(0, 0, 0, 0.3);
-    width: 500px;
-    height: 450px;
-    padding: 20px;
-    margin: 20px;
-    margin-left: 200px;
-    border-radius: 20px;
-}
-
 .contenedor {
     margin-left: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
 }
-
 .tarjeta-cronograma {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.texto-cronograma {}
+.item-horario {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
 
 h1,
 h2,
@@ -85,13 +84,36 @@ span {
 
 .invitados {
     background-color: rgb(255, 228, 117);
+    padding-bottom: 400px;
 }
 
 
-.formulario {
+.tarjeta, .formulario {
+    background-color: rgb(164, 151, 222);
+    box-shadow: 1px 0 5px 5px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+/*.tarjeta {
     background-color: rgb(164, 151, 222);
     box-shadow: 1px 0 5px 5px rgba(0, 0, 0, 0.3);
     width: 500px;
     height: 450px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 200px;
     border-radius: 20px;
+}*/
+
+@media (min-width: 760px) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
 }
