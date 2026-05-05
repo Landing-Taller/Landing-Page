@@ -120,6 +120,14 @@ span {
     border-radius: 20px;
     box-sizing: border-box;
 }
+
+.item-horario {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(195, 201, 240);
+    border-radius: 20px;
+}
+
 /*.tarjeta {
     background-color: rgb(164, 151, 222);
     box-shadow: 1px 0 5px 5px rgba(0, 0, 0, 0.3);
