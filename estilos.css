@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "fuente2";
-    src: url(./Fuentes/fuentes2.ttf);
+    src: url(./Fuentes/fuente2.ttf);
 }
 
 html,
@@ -145,15 +145,22 @@ background-color: rgb(255, 228, 117);
     padding: 20px;
     width: 100%;
 }
+.contenedor-invitados {
+    display: flex;
+    overflow-x: auto;         
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Le damos el 70% de ancho a TODAS las tarjetas en móvil */
 .tarjeta-artista {
- scroll-snap-align: center; 
+    scroll-snap-align: center; 
     flex: 0 0 70%;             
     background-color: transparent;
     text-align: center;
 }
-.tarjeta-artista {
-        flex: 1;                    
-    }
+
 .imagen-principal {
     width: 100%;
     height: 100%;
@@ -200,7 +207,7 @@ background-color: rgb(255, 228, 117);
         justify-content: center;
         align-items: stretch;
     }
-    .contenedor-invitados {
+ .contenedor-invitados {
         gap: 30px;
         max-width: 1100px;         
         margin: auto;
@@ -208,6 +215,12 @@ background-color: rgb(255, 228, 117);
         padding: 40px;
         justify-content: center;
     }
+
+    /* Le decimos a las 3 tarjetas que compartan el espacio en PC */
+    .tarjeta-artista {
+        flex: 1;                    
+        max-width: 300px;   
+    }        
 
     .imagen-principal {
         height: auto;             

@@ -9,6 +9,14 @@
 </head>
 <body>
     <header>
+ <nav class="barra-superior">
+        <div class="logo-animeri">ANIMERI</div>
+        <div class="menu-pill">
+            <a href="#Intro">Sobre el evento</a> | 
+            <a href="#invitados">Artistas invitados</a> | 
+            <a href="#formulario">Participar | Contacto</a>
+        </div>
+    </nav>
         <section class="animeri">
            <h1>Animeri Abril 2026</h1>
         <h3>Feria para artistas y creadores independientes</h3>
@@ -24,7 +32,7 @@
         <h2>Sábado 25 de abril | 14 a 21 HS</h2>
         <p>Pasaje Dardo Rocha (Calle 50 575)</p>
         </section> -->
-    <section class="Intro">
+    <section class="Intro" id="Intro">
         <h1>¡El primer evento en vivo realizado por Yapura Meri!</h1>
     </section>
 
@@ -78,10 +86,12 @@
             <h1>¡Conoce gente fan de las animacioncitas!</h1>
             </div>
             </section>
-            <section class="invitados"> 
+            <section class="invitados" id="invitados"> 
                 <h1>¡Artistas Invitados!</h1>
    <div class="contenedor-invitados">
-    <article class="tarjeta-artista">
+   <div class="contenedor-invitados">
+        <!-- Usamos exactamente la misma clase para las 3 -->
+        <article class="tarjeta-artista">
             <img src="./Imagenes/Shinon.png" alt="Shinon" class="imagen-principal">
         </article>
 
@@ -92,20 +102,40 @@
         <article class="tarjeta-artista">
             <img src="./Imagenes/kaocoffe.png" alt="Kanoetto" class="imagen-principal">
         </article>
-   </div>
+    </div>
+</section>
             </section>
             <section class="bullet2"> 
             <h1>¡Shows, concursos, cosplay, veni a ANIMERI !</h1>
             </section>
         
         </section>
-            <section class=" formulario"> 
-                <h2>Formulario de asistencia</h2>
-                <h3 class="datos">Nombre</h3>
-            <div class="item">
+            <section class="formulario" id="formulario"> 
+          <h2>Formulario de asistencia</h2>
+    <form action="" method="POST" class="formulario-real">
+        
+        <label class="datos" for="email">Mail</label>
+        <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
 
-            </div>
-            </section>
+        <label class="datos" for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label class="datos" for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label class="datos" for="origen">¿Dónde nos encontraste?</label>
+        <select id="origen" name="origen" class="desplegable">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="youtube">YouTube</option>
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="x">X (Twitter)</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <button type="submit" class="participar btn-enviar">Participar!</button>
+    </form>
+</section>
         </main>
             <footer>Mas informacion en el canal de youtube de Yapura meri:
                 <a href="https://www.youtube.com/yapurameri">Yapura Meri</a>
