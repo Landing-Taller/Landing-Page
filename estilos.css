@@ -61,7 +61,7 @@ header {
     margin-top: 0;
 }
 
-.animeri a{
+.animeri a {
     color: white;
     text-decoration: none;
     font-family: "fuente2";
@@ -135,6 +135,10 @@ section {
     border-radius: 20px;
     background-color: rgb(178, 244, 221);
 }
+
+
+
+
 
 h1,
 h2,
@@ -294,20 +298,93 @@ span {
     }
 
     .logo-animeri h2 {
-    margin: 0;
-    font-size: 50px;
+        margin: 0;
+        font-size: 50px;
+    }
+
+    .logo-animeri p {
+        margin: 0;
+        margin-top: 5px;
+
+        font-size: 18px;
+
+        color: white;
+
+        font-family: "fuente2";
+
+        text-shadow: none;
+    }
+
+    /* Estilos generales para las tarjetas, incluyendo el formulario */
+.tarjeta,
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Alinea los elementos al centro */
+    background-color: rgb(164, 151, 222); /* Color de fondo lila */
+    box-shadow: 1px 0 5px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    border-radius: 20px; /* Bordes muy redondeados */
+    box-sizing: border-box;
 }
 
-.logo-animeri p {
-    margin: 0;
-    margin-top: 5px;
+/* Alinea el formulario real al centro */
+.formulario-real {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    font-size: 18px;
-
-    color: white;
-
+/* Estilos para las etiquetas de los campos */
+.datos {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 5px; /* Espacio inferior */
+    margin-top: 15px; /* Espacio superior */
+    color: rgb(255, 248, 242); /* Color de texto blanco hueso */
     font-family: "fuente2";
+    font-size: 16px;
+}
 
-    text-shadow: none;
+/* Estilos para los campos de entrada y el menú desplegable */
+input[type="email"],
+input[type="text"],
+.desplegable {
+    width: 100%;
+    max-width: 400px;
+    height: 40px; /* Altura de los campos */
+    background-color: rgb(255, 248, 242); /* Fondo blanco hueso */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    padding-left: 15px;
+    font-family: "fuente2";
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el campo desplegable */
+.desplegable {
+    color: rgba(59, 59, 59, 0.7); /* Texto ligeramente transparente */
+}
+
+/* Estilos para el botón de enviar */
+.btn-enviar {
+    background-color: rgb(250, 100, 100); /* Color coral/salmon */
+    color: white; /* Texto blanco */
+    font-family: "fuente2";
+    font-size: 18px;
+    padding: 10px 40px; /* Relleno del botón */
+    border: none;
+    border-radius: 25px; /* Bordes muy redondeados */
+    margin-top: 30px; /* Espacio superior */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
 }
 }
