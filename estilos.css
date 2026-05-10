@@ -18,8 +18,9 @@ body {
     padding: 0;
     /*box-sizing: border-box; esto hace que el fondo como qu ese quede quito mientras hace scoll nomas */
     background-attachment: fixed;
-}
 
+    scroll-behavior: smooth;
+}
 
 .barra-superior {
     width: 100%;
@@ -386,5 +387,108 @@ input[type="text"],
     border-radius: 25px; /* Bordes muy redondeados */
     margin-top: 30px; /* Espacio superior */
     cursor: pointer; /* Cursor de mano al pasar por encima */
+}
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.6);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.modal-contenido {
+
+    width: 700px;
+    max-width: 90%;
+    background-color: rgb(147, 241, 208);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-contenido h2{
+    letter-spacing: 2px;
+}
+
+.gato-modal {
+    width: 140px;
+
+    margin-bottom: 20px;
+}
+
+#inicio-modal {
+
+    margin-top: 30px;
+
+    border: none;
+
+    background-color: rgb(250, 100, 100);
+
+    color: white;
+
+    padding: 15px 40px;
+
+    border-radius: 15px;
+
+    font-size: 30px;
+
+    font-family: "fuente1";
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#titulo-modal {
+
+    font-size: 60px;
+
+    margin: 0;
+
+    font-family: "fuente1";
+
+    color: rgb(255, 248, 242);
+
+    text-shadow:
+        3px 3px 0 rgb(164, 151, 222),
+        -3px 3px 0 rgb(164, 151, 222),
+        3px -3px 0 rgb(164, 151, 222),
+        -3px -3px 0 rgb(164, 151, 222);
+}
+
+#mensaje-usuario {
+
+    font-size: 32px;
+
+    margin-top: 20px;
+
+    font-family: "fuente2";
+
+    color: rgb(255, 248, 242);
+
+    text-shadow:
+        2px 2px 0 rgb(164, 151, 222);
 }
 }

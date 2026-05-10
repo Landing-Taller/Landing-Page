@@ -116,28 +116,94 @@
 
         </section>
         <section class="formulario" id="formulario">
-    <h2 class="subtitulo">Formulario de asistencia</h2>
-    <form action="" method="POST" class="formulario-real">
+            <h2 class="subtitulo">Formulario de asistencia</h2>
+            <form action="" method="POST" class="formulario-real">
 
-        <label class="datos" for="email">Mail</label>
-        <input type="email" id="email" name="email" required placeholder="">
+                <label class="datos" for="email">Mail</label>
+                <input type="email" id="email" name="email" required placeholder="">
 
-        <label class="datos" for="nombre">Nombre y apellido</label>
-        <input type="text" id="nombre" name="nombre" required>
+                <label class="datos" for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-        <label class="datos" for="origen">¿Cómo te enteraste del evento?</label>
-        <select id="origen" name="origen" class="desplegable">
-            <option value="" disabled selected>Selecciona una opción</option>
-            <option value="youtube">YouTube</option>
-            <option value="instagram">Instagram</option>
-            <option value="tiktok">TikTok</option>
-            <option value="x">X (Twitter)</option>
-            <option value="otros">Otros</option>
-        </select>
+                <label class="datos" for="origen">¿Cómo te enteraste del evento?</label>
+                <select id="origen" name="origen" class="desplegable">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="x">X (Twitter)</option>
+                    <option value="otros">Otros</option>
+                </select>
 
-        <button type="submit" class="participar btn-enviar">Enviar</button>
-    </form>
-</section>
+                <button type="submit" class="participar btn-enviar">Enviar</button>
+            </form>
+
+            <div class="modal" id="modal-exito">
+
+                <div class="modal-contenido">
+
+                    <img src="./Imagenes/gato.png" alt="Gatito" class="gato-modal">
+
+                    <h2 id="titulo-modal"></h2>
+
+                    <p id="mensaje-usuario"></p>
+
+                    <button id="inicio-modal">
+                        Inicio
+                    </button>
+
+                </div>
+
+            </div>
+
+            </div>
+        </section>
     </main>
     <footer>Mas informacion en el canal de youtube de Yapura meri:
         <a href="https://www.youtube.com/yapurameri">Yapura Meri</a>
+
+        <script>
+
+            const formulario = document.querySelector(".formulario-real");
+
+            const modal = document.querySelector("#modal-exito");
+
+            const botonInicio = document.querySelector("#inicio-modal");
+
+            const tituloModal = document.querySelector("#titulo-modal");
+
+            const mensaje = document.querySelector("#mensaje-usuario");
+
+            formulario.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const nombre = document.querySelector("#nombre").value;
+
+                const email = document.querySelector("#email").value;
+
+                tituloModal.innerHTML = `
+        ¡Gracias ${nombre} por participar!
+    `;
+
+                mensaje.innerHTML = `
+        Ya enviamos la información a <br>
+        ${email}
+    `;
+
+                modal.style.display = "flex";
+            });
+
+            botonInicio.addEventListener("click", function () {
+
+                modal.style.display = "none";
+
+                formulario.reset();
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+        </script>
