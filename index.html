@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animeri</title>
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -43,21 +44,21 @@
         <section class="contenedor">
             <div class="tarjeta">
 
-    <img src="./Imagenes/Yapura.png" alt="" class="imagen-tarjeta">
+                <img src="./Imagenes/Yapura.png" alt="" class="imagen-tarjeta">
 
-    <div class="contenido-tarjeta">
+                <div class="contenido-tarjeta">
 
-        <h2>¡Una feria de Arte digital!</h2>
+                    <h2>¡Una feria de Arte digital!</h2>
 
-        <p>
-            Una propuesta ideal para descubrir nuevas obras,
-            apoyar artistas emergentes y vivir una jornada
-            llena de arte, inspiración y entretenimiento.
-        </p>
+                    <p>
+                        Una propuesta ideal para descubrir nuevas obras,
+                        apoyar artistas emergentes y vivir una jornada
+                        llena de arte, inspiración y entretenimiento.
+                    </p>
 
-    </div>
+                </div>
 
-</div>
+            </div>
             <div class="tarjeta">
                 <h2 class="subtitulo">Cronograma Animeri</h2>
                 <div class="cronograma">
@@ -169,51 +170,75 @@
             </div>
         </section>
     </main>
-    <footer>Mas informacion en el canal de youtube de Yapura meri:
-        <a href="https://www.youtube.com/yapurameri">Yapura Meri</a>
+    
+    <footer class="footer-animeri">
+        <div class="dibujo-yapura">
+            <img src="./Imagenes/yapura-dibujo.png" alt="" class="">
+        </div>
+        <div class="barra-footer">
 
-        <script>
+            <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
 
-            const formulario = document.querySelector(".formulario-real");
+            <a href="">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
 
-            const modal = document.querySelector("#modal-exito");
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
 
-            const botonInicio = document.querySelector("#inicio-modal");
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-            const tituloModal = document.querySelector("#titulo-modal");
+        </div>
 
-            const mensaje = document.querySelector("#mensaje-usuario");
+    </footer>
 
-            formulario.addEventListener("submit", function (event) {
+    <script>
 
-                event.preventDefault();
+        const formulario = document.querySelector(".formulario-real");
 
-                const nombre = document.querySelector("#nombre").value;
+        const modal = document.querySelector("#modal-exito");
 
-                const email = document.querySelector("#email").value;
+        const botonInicio = document.querySelector("#inicio-modal");
 
-                tituloModal.innerHTML = `
+        const tituloModal = document.querySelector("#titulo-modal");
+
+        const mensaje = document.querySelector("#mensaje-usuario");
+
+        formulario.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const nombre = document.querySelector("#nombre").value;
+
+            const email = document.querySelector("#email").value;
+
+            tituloModal.innerHTML = `
         ¡Gracias ${nombre} por participar!
     `;
 
-                mensaje.innerHTML = `
+            mensaje.innerHTML = `
         Ya enviamos la información a <br>
         ${email}
     `;
 
-                modal.style.display = "flex";
+            modal.style.display = "flex";
+        });
+
+        botonInicio.addEventListener("click", function () {
+
+            modal.style.display = "none";
+
+            formulario.reset();
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
             });
+        });
 
-            botonInicio.addEventListener("click", function () {
-
-                modal.style.display = "none";
-
-                formulario.reset();
-
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
-            });
-
-        </script>
+    </script>

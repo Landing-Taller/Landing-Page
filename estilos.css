@@ -251,6 +251,7 @@ span {
         justify-content: center;
         align-items: stretch;
     }
+    }
 
     .contenedor-invitados {
         gap: 30px;
@@ -541,4 +542,50 @@ input[type="text"],
     text-shadow:
         2px 2px 0 rgb(164, 151, 222);
 }
+
+.footer-animeri {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 100px;
+}
+
+.barra-footer {
+
+    width: 100%;
+
+    background-color: rgb(120, 128, 204);
+
+    padding: 35px 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.barra-footer a {
+
+    color: rgb(255,248,242);
+
+    font-size: 35px;
+
+    transition: 0.2s;
+}
+
+.dibujo-yapura {
+
+    position: absolute;
+
+    right: 40px;
+
+    margin-top: -190px;
+
+    width: 140px;
 }
